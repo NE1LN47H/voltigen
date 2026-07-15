@@ -1,15 +1,23 @@
+import Preloader from './components/Preloader';
+import Header from './components/Header';
 import HeroSection from './components/HeroSection';
-import AboutSection from './components/AboutSection';
 import ProductsSection from './components/ProductsSection';
+import ScienceSection from './components/ScienceSection';
+import ReviewsSection from './components/ReviewsSection';
+import QASection from './components/QASection';
 import Footer from './components/Footer';
 
 export default function Home() {
   return (
-    <main>
+    <>
+      <Preloader />
+      <Header />
       <HeroSection />
-      <AboutSection />
       <ProductsSection />
+      <ScienceSection />
+      <ReviewsSection />
+      <QASection />
       <Footer />
-    </main>
+    </>
   );
 }
